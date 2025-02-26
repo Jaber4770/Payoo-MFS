@@ -19,7 +19,7 @@
         <div class="flex items-center justify-center">
             <img class="w-16 p-2" src="assets/Group.png" alt="">
             <div>
-                <h2 class="font-semibold text-2xl">$45000</h2>
+                <h2 class="font-semibold text-2xl">$ <span id="mainBalance">45000</span></h2>
                 <p class="text-gray-400">Available Balance</p>
             </div>
         </div>
@@ -36,33 +36,33 @@
             </p>
         </section>
         <section class="grid grid-cols-3 gap-2 my-5 px-2 rounded-b-3xl">
-            <div
-                class="border text-gray-600 rounded-lg border-gray-400 text-center p-1 hover:bg-[#0874f2] hover:text-white">
+            <div id="addMoney"
+                class="border cursor-pointer cursor-pointer text-gray-600 rounded-lg border-gray-400 text-center p-1 hover:bg-[#0874f2] hover:text-white">
                 <img class="mx-auto my-2" src="assets/addmoney.png" alt="">
                 <span class="">Add Money</span>
             </div>
-            <div
-                class="border text-gray-600 rounded-lg border-gray-400 text-center p-1 hover:bg-[#0874f2] hover:text-white">
+            <div id="cashOut"
+                class="border cursor-pointer text-gray-600 rounded-lg border-gray-400 text-center p-1 hover:bg-[#0874f2] hover:text-white">
                 <img class="mx-auto my-2" src="assets/cashOut.png" alt="">
                 <span class="">Cash Out</span>
             </div>
-            <div
-                class="border text-gray-600 rounded-lg border-gray-400 text-center p-1 hover:bg-[#0874f2] hover:text-white">
+            <div id="transferMoney"
+                class="border cursor-pointer text-gray-600 rounded-lg border-gray-400 text-center p-1 hover:bg-[#0874f2] hover:text-white">
                 <img class="mx-auto my-2" src="assets/transfer.png" alt="">
                 <span class="">Transfer Money</span>
             </div>
-            <div
-                class="border text-gray-600 rounded-lg border-gray-400 text-center p-1 hover:bg-[#0874f2] hover:text-white">
+            <div id="getBonus"
+                class="border cursor-pointer text-gray-600 rounded-lg border-gray-400 text-center p-1 hover:bg-[#0874f2] hover:text-white">
                 <img class="mx-auto my-2" src="assets/bonus1.png" alt="">
                 <span class="">Get Bonus</span>
             </div>
-            <div
-                class="border text-gray-600 rounded-lg border-gray-400 text-center p-1 hover:bg-[#0874f2] hover:text-white">
+            <div id="payBill"
+                class="border cursor-pointer text-gray-600 rounded-lg border-gray-400 text-center p-1 hover:bg-[#0874f2] hover:text-white">
                 <img class="mx-auto my-2" src="assets/payBill.png" alt="">
                 <span class="">Pay Bill</span>
             </div>
-            <div
-                class="border text-gray-600 rounded-lg border-gray-400 text-center p-1 hover:bg-[#0874f2] hover:text-white">
+            <div id="transaction"
+                class="border cursor-pointer text-gray-600 rounded-lg border-gray-400 text-center p-1 hover:bg-[#0874f2] hover:text-white">
                 <img class="mx-auto my-2" src="assets/transaction1.png" alt="">
                 <span class="">Transaction</span>
             </div>
@@ -129,6 +129,13 @@
     </main>
     <footer></footer>
     <script src="main.js"></script>
+    <script src="javascript/addMoney.js"></script>
+    <script src="javascript/cashOut.js"></script>
+    <script src="javascript/dashboard.js"></script>
+    <script src="javascript/getBonus.js"></script>
+    <script src="javascript/payBill.js"></script>
+    <script src="javascript/transaction.js"></script>
+    <script src="javascript/transferMoney.js"></script>
 </body>
 
 </html>

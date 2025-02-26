@@ -19,7 +19,7 @@
         <div class="flex items-center justify-center">
             <img class="w-16 p-2" src="assets/Group.png" alt="">
             <div>
-                <h2 class="font-semibold text-2xl">$45000</h2>
+                <h2 class="font-semibold text-2xl">$ <span id="mainBalance">45000</span></h2>
                 <p class="text-gray-400">Available Balance</p>
             </div>
         </div>
@@ -36,34 +36,35 @@
             <p class="text-gray-500">Enjoy easy and convenient financial services with us. Cashout charge is low and
             </p>
         </section>
+
         <section class="grid grid-cols-3 gap-2 my-5 px-2 rounded-b-3xl">
-            <div
-                class="border text-gray-600 rounded-lg border-gray-400 text-center p-1 hover:bg-[#0874f2] hover:text-white">
+            <div id="addMoney"
+                class="border cursor-pointer cursor-pointer text-gray-600 rounded-lg border-gray-400 text-center p-1 hover:bg-[#0874f2] hover:text-white">
                 <img class="mx-auto my-2" src="assets/addmoney.png" alt="">
                 <span class="">Add Money</span>
             </div>
-            <div
-                class="border text-gray-600 rounded-lg border-gray-400 text-center p-1 hover:bg-[#0874f2] hover:text-white">
+            <div id="cashOut"
+                class="border cursor-pointer text-gray-600 rounded-lg border-gray-400 text-center p-1 hover:bg-[#0874f2] hover:text-white">
                 <img class="mx-auto my-2" src="assets/cashOut.png" alt="">
                 <span class="">Cash Out</span>
             </div>
-            <div
-                class="border text-gray-600 rounded-lg border-gray-400 text-center p-1 hover:bg-[#0874f2] hover:text-white">
+            <div id="transferMoney"
+                class="border cursor-pointer text-gray-600 rounded-lg border-gray-400 text-center p-1 hover:bg-[#0874f2] hover:text-white">
                 <img class="mx-auto my-2" src="assets/transfer.png" alt="">
                 <span class="">Transfer Money</span>
             </div>
-            <div
-                class="border text-gray-600 rounded-lg border-gray-400 text-center p-1 hover:bg-[#0874f2] hover:text-white">
+            <div id="getBonus"
+                class="border cursor-pointer text-gray-600 rounded-lg border-gray-400 text-center p-1 hover:bg-[#0874f2] hover:text-white">
                 <img class="mx-auto my-2" src="assets/bonus1.png" alt="">
                 <span class="">Get Bonus</span>
             </div>
-            <div
-                class="border text-gray-600 rounded-lg border-gray-400 text-center p-1 hover:bg-[#0874f2] hover:text-white">
+            <div id="payBill"
+                class="border cursor-pointer text-gray-600 rounded-lg border-gray-400 text-center p-1 hover:bg-[#0874f2] hover:text-white">
                 <img class="mx-auto my-2" src="assets/payBill.png" alt="">
                 <span class="">Pay Bill</span>
             </div>
-            <div
-                class="border text-gray-600 rounded-lg border-gray-400 text-center p-1 hover:bg-[#0874f2] hover:text-white">
+            <div id="transaction"
+                class="border cursor-pointer text-gray-600 rounded-lg border-gray-400 text-center p-1 hover:bg-[#0874f2] hover:text-white">
                 <img class="mx-auto my-2" src="assets/transaction1.png" alt="">
                 <span class="">Transaction</span>
             </div>
@@ -78,12 +79,17 @@
                         <div class="card-body">
                             <fieldset class="fieldset">
                                 <label class="fieldset-label">Agent Number</label>
-                                <input type="number" class="rounded-2xl input border-[#0874f2] focus:outline-[#0874f2]" placeholder="Account Number" />
+                                <input type="number" class="rounded-2xl input border-[#0874f2] focus:outline-[#0874f2]"
+                                    placeholder="Account Number" />
                                 <label class="fieldset-label">Amount</label>
-                                <input type="number" class="rounded-2xl input border-[#0874f2] focus:outline-[#0874f2]" placeholder="Amount" />
+                                <input id="amount" type="number" class="rounded-2xl input border-[#0874f2] focus:outline-[#0874f2]"
+                                    placeholder="Amount" />
                                 <label class="fieldset-label">PIN</label>
-                                <input type="password" class="rounded-2xl input border-[#0874f2] focus:outline-[#0874f2]" placeholder="PIN" />
-                                <button class="rounded-2xl btn btn-neutral mt-4 bg-[#0874f2] border-[#0874f2]">Withdraw Money</button>
+                                <input id="pin" type="password"
+                                    class="rounded-2xl input border-[#0874f2] focus:outline-[#0874f2]"
+                                    placeholder="PIN" />
+                                <button id="withdrawMoney" class="rounded-2xl btn btn-neutral mt-4 bg-[#0874f2] border-[#0874f2]">Withdraw
+                                    Money</button>
                             </fieldset>
                         </div>
                     </div>
@@ -93,6 +99,14 @@
     </main>
     <footer></footer>
     <script src="main.js"></script>
+    <script src="javascript/cashOut.js"></script>
+    <script src="javascript/addMoney.js"></script>
+    <script src="javascript/cashOut.js"></script>
+    <script src="javascript/dashboard.js"></script>
+    <script src="javascript/getBonus.js"></script>
+    <script src="javascript/payBill.js"></script>
+    <script src="javascript/transaction.js"></script>
+    <script src="javascript/transferMoney.js"></script>
 </body>
 
 </html>
