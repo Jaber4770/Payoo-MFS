@@ -1,6 +1,10 @@
 document.getElementById('addMoney').addEventListener("click", function (e) {
+    const filled = document.getElementById("addMoney");
+    filled.style.backgroundColor = "#0874f2"; 
+    
     e.preventDefault();
     window.location.href = 'addMoney.html';
+    
 
 });
 
