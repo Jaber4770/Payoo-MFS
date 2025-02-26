@@ -23,8 +23,7 @@
                 <p class="text-gray-400">Available Balance</p>
             </div>
         </div>
-        <div
-            class="flex items-center justify-center gap-2 border p-1 border-gray-300 rounded-lg  hover:bg-gray-300 text-black hover:text-white">
+        <div class="flex items-center justify-center gap-2 border p-1 border-gray-300 rounded-lg  hover:bg-gray-300 text-black hover:text-white">
             <img src="assets/logout.png" class="w-5 " alt="">
             <button class="">Log Out</button>
         </div>
@@ -68,34 +67,62 @@
                 <span class="">Transaction</span>
             </div>
         </section>
-        <section class="mt-15 px-2 text-center">
-            <div>
-                <h2 class="font-bold text-lg text-left pb-3">Add Money</h2>
+        <section class="bg-gray-200 pb-7 px-2">
+            <div class="flex justify-between items-center py-5">
+                <h1 class="text-lg font-semibold">Transaction History</h1>
+                <span class="text-gray-500">See All</span>
             </div>
-            <div class="">
-                <div class="hero-content flex-col lg:flex-row-reverse">
-                    <div class="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
-                        <div class="card-body">
-                            <fieldset class="fieldset">
-                                <label for="" class="fieldset-label">Chose Wallet</label>
-                                <select class="rounded-2xl select border-[#0874f2] focus:outline-[#0874f2]">
-                                    <option disabled selected>Choose Wallet</option>
-                                    <option value="Bkash" class="rounded-2xl outline-none">Bkash</option>
-                                    <option value="Nagad" class="rounded-2xl outline-none">Nagad</option>
-                                    <option value="DBBL" class="rounded-2xl outline-none">DBBL</option>
-                                    <option value="OtherBank" class="rounded-2xl outline-none">Other Bank</option>
-                                </select>
+            <div>
 
-                                <label class="fieldset-label">Account Number</label>
-                                <input type="number" class="rounded-2xl input border-[#0874f2] focus:outline-[#0874f2]" placeholder="Account Number" />
-                                <label class="fieldset-label">Amount</label>
-                                <input type="number" class="rounded-2xl input border-[#0874f2] focus:outline-[#0874f2]" placeholder="Amount" />
-                                <label class="fieldset-label">PIN</label>
-                                <input type="password" class="rounded-2xl input border-[#0874f2] focus:outline-[#0874f2]" placeholder="PIN" />
-                                <button class="rounded-2xl btn btn-neutral mt-4 bg-[#0874f2] border-[#0874f2]">Add Money</button>
-                            </fieldset>
+                <div class="bg-white p-2 mb-3 rounded-lg border-gray-400 flex items-center justify-between border-1">
+                    <div class="flex items-center justify-between gap-3">
+                        <img class="bg-gray-300 p-3 rounded-full" src="assets/payBill.png" alt="">
+                        <div>
+                            <p class="text-gray-700 font-semibold">Electricity Bill</p>
+                            <span class="text-xs">Today 01:44 AM</span>
                         </div>
                     </div>
+                    <img class="w-5" src="assets/option-icon.png" alt="">
+                </div>
+                <div class="bg-white p-2 mb-3 rounded-lg border-gray-400 flex items-center justify-between border-1">
+                    <div class="flex items-center justify-between gap-3">
+                        <img class="bg-gray-300 p-3 rounded-full" src="assets/transfer.png" alt="">
+                        <div>
+                            <p class="text-gray-700 font-semibold">Transfer</p>
+                            <span class="text-xs">Yesterday 04:44 AM</span>
+                        </div>
+                    </div>
+                    <img class="w-5" src="assets/option-icon.png" alt="">
+                </div>
+                <div class="bg-white p-2 mb-3 rounded-lg border-gray-400 flex items-center justify-between border-1">
+                    <div class="flex items-center justify-between gap-3">
+                        <img class="bg-gray-300 p-3 rounded-full" src="assets/cashOut.png" alt="">
+                        <div>
+                            <p class="text-gray-700 font-semibold">Cash Out</p>
+                            <span class="text-xs">25/01/2025 03:40 PM</span>
+                        </div>
+                    </div>
+                    <img class="w-5" src="assets/option-icon.png" alt="">
+                </div>
+                <div class="bg-white p-2 mb-3 rounded-lg border-gray-400 flex items-center justify-between border-1">
+                    <div class="flex items-center justify-between gap-3">
+                        <img class="bg-gray-300 p-3 rounded-full" src="assets/bonus1.png" alt="">
+                        <div>
+                            <p class="text-gray-700 font-semibold">Bonus</p>
+                            <span class="text-xs">25/01/2025 10:40 PM</span>
+                        </div>
+                    </div>
+                    <img class="w-5" src="assets/option-icon.png" alt="">
+                </div>
+                <div class="bg-white p-2 rounded-lg border-gray-400 flex items-center justify-between border-1">
+                    <div class="flex items-center justify-between gap-3">
+                        <img class="bg-gray-300 p-3 rounded-full" src="assets/payBill.png" alt="">
+                        <div>
+                            <p class="text-gray-700 font-semibold">Gas Bill</p>
+                            <span class="text-xs">25/01/2025 10:40 PM</span>
+                        </div>
+                    </div>
+                    <img class="w-5" src="assets/option-icon.png" alt="">
                 </div>
             </div>
         </section>

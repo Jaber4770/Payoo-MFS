@@ -10,12 +10,122 @@
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <!-- css -->
     <link rel="stylesheet" href="style.css">
+    <!-- fontawesome -->
+    <script src="https://kit.fontawesome.com/b7903cb9e0.js" crossorigin="anonymous"></script>
 </head>
 
-<body class="max-w-md min-h-screen mx-auto py-6 shadow-2xl px-2">
-    <header></header>
+<body class="max-w-md min-h-screen mx-auto py-6 shadow-2xl">
+    <header class="flex  justify-between items-center border-b-2 border-gray-300 px-2">
+        <div class="flex items-center justify-center">
+            <img class="w-16 p-2" src="assets/Group.png" alt="">
+            <div>
+                <h2 class="font-semibold text-2xl">$45000</h2>
+                <p class="text-gray-400">Available Balance</p>
+            </div>
+        </div>
+        <div class="flex items-center justify-center gap-2 border p-1 border-gray-300 rounded-lg  hover:bg-gray-300 text-black hover:text-white">
+            <img src="assets/logout.png" class="w-5 " alt="">
+            <button class="">Log Out</button>
+        </div>
+    </header>
     <main>
-        <h1>hello</h1>
+        <section class="px-2">
+            <h1 class="text-2xl font-bold flex items-center py-5"> <img class="w-10" src="assets/fire.png" alt="">
+                Welcome to Payooo!</h1>
+            <p class="text-gray-500">Enjoy easy and convenient financial services with us. Cashout charge is low and
+            </p>
+        </section>
+        <section class="grid grid-cols-3 gap-2 my-5 px-2 rounded-b-3xl">
+            <div
+                class="border text-gray-600 rounded-lg border-gray-400 text-center p-1 hover:bg-[#0874f2] hover:text-white">
+                <img class="mx-auto my-2" src="assets/addmoney.png" alt="">
+                <span class="">Add Money</span>
+            </div>
+            <div
+                class="border text-gray-600 rounded-lg border-gray-400 text-center p-1 hover:bg-[#0874f2] hover:text-white">
+                <img class="mx-auto my-2" src="assets/cashOut.png" alt="">
+                <span class="">Cash Out</span>
+            </div>
+            <div
+                class="border text-gray-600 rounded-lg border-gray-400 text-center p-1 hover:bg-[#0874f2] hover:text-white">
+                <img class="mx-auto my-2" src="assets/transfer.png" alt="">
+                <span class="">Transfer Money</span>
+            </div>
+            <div
+                class="border text-gray-600 rounded-lg border-gray-400 text-center p-1 hover:bg-[#0874f2] hover:text-white">
+                <img class="mx-auto my-2" src="assets/bonus1.png" alt="">
+                <span class="">Get Bonus</span>
+            </div>
+            <div
+                class="border text-gray-600 rounded-lg border-gray-400 text-center p-1 hover:bg-[#0874f2] hover:text-white">
+                <img class="mx-auto my-2" src="assets/payBill.png" alt="">
+                <span class="">Pay Bill</span>
+            </div>
+            <div
+                class="border text-gray-600 rounded-lg border-gray-400 text-center p-1 hover:bg-[#0874f2] hover:text-white">
+                <img class="mx-auto my-2" src="assets/transaction1.png" alt="">
+                <span class="">Transaction</span>
+            </div>
+        </section>
+        <section class="bg-gray-200 pb-7 px-2">
+            <div class="flex justify-between items-center py-5">
+                <h1 class="text-lg font-semibold">Last Payment</h1>
+                <span class="text-gray-500">See All</span>
+            </div>
+            <div>
+
+                <div class="bg-white p-2 mb-3 rounded-lg border-gray-400 flex items-center justify-between border-1">
+                    <div class="flex items-center justify-between gap-3">
+                        <img class="bg-gray-300 p-3 rounded-full" src="assets/payBill.png" alt="">
+                        <div>
+                            <p class="text-gray-700 font-semibold">Electricity Bill</p>
+                            <span class="text-xs">Today 01:44 AM</span>
+                        </div>
+                    </div>
+                    <img class="w-5" src="assets/option-icon.png" alt="">
+                </div>
+                <div class="bg-white p-2 mb-3 rounded-lg border-gray-400 flex items-center justify-between border-1">
+                    <div class="flex items-center justify-between gap-3">
+                        <img class="bg-gray-300 p-3 rounded-full" src="assets/transfer.png" alt="">
+                        <div>
+                            <p class="text-gray-700 font-semibold">Transfer</p>
+                            <span class="text-xs">Yesterday 04:44 AM</span>
+                        </div>
+                    </div>
+                    <img class="w-5" src="assets/option-icon.png" alt="">
+                </div>
+                <div class="bg-white p-2 mb-3 rounded-lg border-gray-400 flex items-center justify-between border-1">
+                    <div class="flex items-center justify-between gap-3">
+                        <img class="bg-gray-300 p-3 rounded-full" src="assets/cashOut.png" alt="">
+                        <div>
+                            <p class="text-gray-700 font-semibold">Cash Out</p>
+                            <span class="text-xs">25/01/2025 03:40 PM</span>
+                        </div>
+                    </div>
+                    <img class="w-5" src="assets/option-icon.png" alt="">
+                </div>
+                <div class="bg-white p-2 mb-3 rounded-lg border-gray-400 flex items-center justify-between border-1">
+                    <div class="flex items-center justify-between gap-3">
+                        <img class="bg-gray-300 p-3 rounded-full" src="assets/bonus1.png" alt="">
+                        <div>
+                            <p class="text-gray-700 font-semibold">Bonus</p>
+                            <span class="text-xs">25/01/2025 10:40 PM</span>
+                        </div>
+                    </div>
+                    <img class="w-5" src="assets/option-icon.png" alt="">
+                </div>
+                <div class="bg-white p-2 rounded-lg border-gray-400 flex items-center justify-between border-1">
+                    <div class="flex items-center justify-between gap-3">
+                        <img class="bg-gray-300 p-3 rounded-full" src="assets/payBill.png" alt="">
+                        <div>
+                            <p class="text-gray-700 font-semibold">Gas Bill</p>
+                            <span class="text-xs">25/01/2025 10:40 PM</span>
+                        </div>
+                    </div>
+                    <img class="w-5" src="assets/option-icon.png" alt="">
+                </div>
+            </div>
+        </section>
     </main>
     <footer></footer>
     <script src="main.js"></script>

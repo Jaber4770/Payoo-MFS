@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payoo MFS</title>
+    <!-- daisy and tailwind css -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5.0.0-beta.8/daisyui.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <!-- css -->
+    <link rel="stylesheet" href="style.css">
+    <!-- fontawesome -->
+    <script src="https://kit.fontawesome.com/b7903cb9e0.js" crossorigin="anonymous"></script>
+</head>
+
+<body class="max-w-md min-h-screen mx-auto py-6 shadow-2xl">
+    <header class="flex  justify-between items-center border-b-2 border-gray-300 px-2">
+        <div class="flex items-center justify-center">
+            <img class="w-16 p-2" src="assets/Group.png" alt="">
+            <div>
+                <h2 class="font-semibold text-2xl">$45000</h2>
+                <p class="text-gray-400">Available Balance</p>
+            </div>
+        </div>
+        <div
+            class="flex items-center justify-center gap-2 border p-1 border-gray-300 rounded-lg  hover:bg-gray-300 text-black hover:text-white">
+            <img src="assets/logout.png" class="w-5 " alt="">
+            <button class="">Log Out</button>
+        </div>
+    </header>
+    <main>
+        <section class="px-2">
+            <h1 class="text-2xl font-bold flex items-center py-5"> <img class="w-10" src="assets/fire.png" alt="">
+                Welcome to Payooo!</h1>
+            <p class="text-gray-500">Enjoy easy and convenient financial services with us. Cashout charge is low and
+            </p>
+        </section>
+        <section class="grid grid-cols-3 gap-2 my-5 px-2 rounded-b-3xl">
+            <div
+                class="border text-gray-600 rounded-lg border-gray-400 text-center p-1 hover:bg-[#0874f2] hover:text-white">
+                <img class="mx-auto my-2" src="assets/addmoney.png" alt="">
+                <span class="">Add Money</span>
+            </div>
+            <div
+                class="border text-gray-600 rounded-lg border-gray-400 text-center p-1 hover:bg-[#0874f2] hover:text-white">
+                <img class="mx-auto my-2" src="assets/cashOut.png" alt="">
+                <span class="">Cash Out</span>
+            </div>
+            <div
+                class="border text-gray-600 rounded-lg border-gray-400 text-center p-1 hover:bg-[#0874f2] hover:text-white">
+                <img class="mx-auto my-2" src="assets/transfer.png" alt="">
+                <span class="">Transfer Money</span>
+            </div>
+            <div
+                class="border text-gray-600 rounded-lg border-gray-400 text-center p-1 hover:bg-[#0874f2] hover:text-white">
+                <img class="mx-auto my-2" src="assets/bonus1.png" alt="">
+                <span class="">Get Bonus</span>
+            </div>
+            <div
+                class="border text-gray-600 rounded-lg border-gray-400 text-center p-1 hover:bg-[#0874f2] hover:text-white">
+                <img class="mx-auto my-2" src="assets/payBill.png" alt="">
+                <span class="">Pay Bill</span>
+            </div>
+            <div
+                class="border text-gray-600 rounded-lg border-gray-400 text-center p-1 hover:bg-[#0874f2] hover:text-white">
+                <img class="mx-auto my-2" src="assets/transaction1.png" alt="">
+                <span class="">Transaction</span>
+            </div>
+        </section>
+        <section>
+            <h2 class="px-2 py-5 font-bold text-2xl">Get Bonus</h2>
+            <div class="hero-content flex-col lg:flex-row-reverse">
+                <div class="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
+                    <div class="card-body">
+                        <fieldset class="fieldset">
+                            <label class="fieldset-label">Enter Bonus Coupon</label>
+                            <input type="text" class="rounded-2xl input border-[#0874f2] focus:outline-[#0874f2]"
+                                placeholder="Enter Bonus Coupon" />
+                            <button class="rounded-2xl btn btn-neutral mt-4 bg-[#0874f2] border-[#0874f2]">Get Bonus</button>
+                        </fieldset>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer></footer>
+    <script src="main.js"></script>
+</body>
+
+</html>
